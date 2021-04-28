@@ -1,6 +1,6 @@
 # task_brasket
 
 ## Jest_test
-![image](https://user-images.githubusercontent.com/56951952/116395787-40421780-a82d-11eb-98c7-f3068ebcc72d.png)
+![image](https://user-images.githubusercontent.com/56951952/116398226-3b329780-a830-11eb-9a39-8ed7856de3c9.png)
 
-![image](https://user-images.githubusercontent.com/56951952/116395934-69fb3e80-a82d-11eb-9d22-12e11a6efa2e.png)
+![image](https://user-images.githubusercontent.com/56951952/116398277-4980b380-a830-11eb-9e06-34ce6ce7f2e1.png)

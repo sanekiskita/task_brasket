@@ -1,35 +1,35 @@
 const brusket = require('./brasket');
 
-test('[]', () => {
+test('[]=>true', () => {
 	expect(brusket('[]')).toBe(true);
 });
-test('[[[]]]', () => {
+test('[[[]]]=>true', () => {
 	expect(brusket('[[[]]]')).toBe(true);
 });
-test('{[()]}', () => {
-	expect(brusket('[[[]]]')).toBe(true);
+test('{[()]}=>true', () => {
+	expect(brusket('{[()]}')).toBe(true);
 });
-test('[{}()()]', () => {
+test('[{}()()]=>true', () => {
 	expect(brusket('[{}()()]')).toBe(true);
 });
-test('[{(}()()]', () => {
+test('[{(}()()]=>false', () => {
 	expect(brusket('[{(}()()]')).toBe(false);
 });
-test('[{(})()()]', () => {
+test('[{(})()()]=>false', () => {
 	expect(brusket('[{(})()()]')).toBe(false);
 });
-test('[(])', () => {
+test('[(])=>false', () => {
 	expect(brusket('[(])')).toBe(false);
 });
-test('[(]))', () => {
+test('[(]))=>false', () => {
 	expect(brusket('[(]))')).toBe(false);
 });
-test('(({{})', () => {
+test('(({{})=>false', () => {
 	expect(brusket('(({{})')).toBe(false);
 });
-test('(({{})', () => {
+test('(({{})=>false', () => {
 	expect(brusket('(({{})')).toBe(false);
 });
-test('((((((((({{{{{{{{[[[[[[[]]]]]]]}}}}}}}})))))))))', () => {
+test('((((((((({{{{{{{{[[[[[[[]]]]]]]}}}}}}}})))))))))=>true', () => {
 	expect(brusket('((((((((({{{{{{{{[[[[[[[]]]]]]]}}}}}}}})))))))))')).toBe(true);
 });
